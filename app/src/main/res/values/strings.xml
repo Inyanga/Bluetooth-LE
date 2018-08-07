@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Bluetooth LE</string>
+    <string name="ble_not_supported">BLE is not supported on the device</string>
+    <string name="scan">Scan</string>
+    <string name="device">Device:</string>
+    <string name="device_name">Name</string>
+    <string name="device_type">Type:</string>
+    <string name="device_type_text">%d</string>
+</resources>

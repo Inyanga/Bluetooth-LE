@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/deviceLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/roboto_medium"
+        android:textSize="16sp"
+        android:text="@string/device"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/deviceName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/roboto_medium"
+        android:textSize="20sp"
+        android:text="@string/device_name"
+        app:layout_constraintStart_toEndOf="@id/deviceLabel"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/typeLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/roboto_medium"
+        android:textSize="16sp"
+        android:text="@string/device_type"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/deviceLabel" />
+
+    <TextView
+        android:id="@+id/deviceType"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/roboto_medium"
+        android:textSize="18sp"
+        android:text="@string/device_type"
+        app:layout_constraintStart_toEndOf="@id/deviceLabel"
+        app:layout_constraintTop_toBottomOf="@id/deviceName" />
+
+    <TextView
+        android:id="@+id/addressLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/roboto_medium"
+        android:textSize="16sp"
+        android:text="Address:"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/typeLabel" />
+
+    <TextView
+        android:id="@+id/deviceAddress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/roboto_medium"
+        android:textSize="18sp"
+        android:text="@string/device_type"
+        app:layout_constraintStart_toEndOf="@id/deviceLabel"
+        app:layout_constraintTop_toBottomOf="@id/deviceType" />
+
+</android.support.constraint.ConstraintLayout>
