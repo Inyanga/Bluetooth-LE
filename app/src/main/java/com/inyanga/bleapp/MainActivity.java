@@ -77,6 +77,7 @@ public class MainActivity extends AppCompatActivity implements MainUiCallback {
         if (bluetoothAdapter == null || !bluetoothAdapter.isEnabled()) {
             initBt();
         }
+        deviceList.clear();
         bleManager.scanLeDevice();
     }
 
