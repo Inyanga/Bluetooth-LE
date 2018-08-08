@@ -32,11 +32,7 @@ public class DeviceDataActivity extends AppCompatActivity implements ObservableD
     public void onHwRevisionUpdate(final String rev) {
        onUithreadUpdate(deviceRev, rev);
     }
-
-    @Override
-    public void onSwRevisionUpdate(String rev) {
-        onUithreadUpdate(softRev, rev);
-    }
+    
 
     private void onUithreadUpdate(final TextView view, final String value) {
         runOnUiThread(new Runnable() {

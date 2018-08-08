@@ -75,10 +75,7 @@ public class BleManager {
         public void onServicesDiscovered(BluetoothGatt gatt, int status) {
             BluetoothGattService gattService = gatt.getService(DEVICE_INFO_SERVICE_UUID);
             BluetoothGattCharacteristic revChar = gattService.getCharacteristic(HARDWARE_REV_CHR_UUID);
-
             gatt.readCharacteristic(revChar);
-
-
         }
 
         @Override
