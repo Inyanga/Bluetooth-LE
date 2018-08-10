@@ -5,6 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".DeviceDataActivity">
+
     <TextView
         android:id="@+id/deviceLabel"
         android:layout_width="wrap_content"
@@ -12,8 +13,8 @@
         android:layout_marginStart="24dp"
         android:layout_marginTop="24dp"
         android:fontFamily="@font/roboto_medium"
-        android:textSize="16sp"
         android:text="@string/device"
+        android:textSize="16sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -24,8 +25,8 @@
         android:layout_marginStart="24dp"
         android:layout_marginTop="22dp"
         android:fontFamily="@font/roboto_medium"
-        android:textSize="20sp"
         android:text="@string/device_name"
+        android:textSize="20sp"
         app:layout_constraintStart_toEndOf="@id/deviceLabel"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -36,8 +37,8 @@
         android:layout_marginStart="24dp"
         android:layout_marginTop="24dp"
         android:fontFamily="@font/roboto_medium"
-        android:textSize="16sp"
         android:text="@string/address"
+        android:textSize="16sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/deviceLabel" />
 
@@ -48,8 +49,8 @@
         android:layout_marginStart="24dp"
         android:layout_marginTop="18dp"
         android:fontFamily="@font/roboto_medium"
-        android:textSize="20sp"
         android:text="@string/device_name"
+        android:textSize="20sp"
         app:layout_constraintStart_toEndOf="@id/deviceLabel"
         app:layout_constraintTop_toBottomOf="@id/deviceName" />
 
@@ -60,8 +61,9 @@
         android:layout_marginStart="24dp"
         android:layout_marginTop="24dp"
         android:fontFamily="@font/roboto_medium"
-        android:textSize="16sp"
         android:text="@string/rev"
+        android:textSize="16sp"
+        android:visibility="invisible"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/addressLabel" />
 
@@ -100,4 +102,26 @@
         android:visibility="gone"
         app:layout_constraintStart_toEndOf="@id/deviceLabel"
         app:layout_constraintTop_toBottomOf="@id/deviceRev" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
+        android:layout_marginEnd="240dp"
+        android:onClick="vibrate"
+        android:text="VIBRATE"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
+        android:layout_marginEnd="72dp"
+        android:onClick="changeTime"
+        android:text="TIME"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
 </android.support.constraint.ConstraintLayout>

@@ -27,6 +27,7 @@ import java.util.List;
 public class MainActivity extends AppCompatActivity implements MainUiCallback {
 
     private final static int BT_REQUEST_CODE = 1;
+    private final static String MI2_MAC = "E5:EE:AC:E1:DF:33";
     public final static String DEVICE = "device";
 
     private BluetoothAdapter bluetoothAdapter;
@@ -94,10 +95,17 @@ public class MainActivity extends AppCompatActivity implements MainUiCallback {
 
     @Override
     public void updateDeviceList(BluetoothDevice device) {
-        deviceList.add(device);
+        if(!deviceList.contains(device)) {
+            deviceList.add(device);
+        }
         Log.i("********", "Device has been added to the list");
         adapter.notifyDataSetChanged();
     }
 
+    public void connectXiaomi(View view) {
+        Intent deviceDataActivity = new Intent(getApplicationContext(), DeviceDataActivity.class);
+        deviceDataActivity.putExtra(DEVICE, bluetoothAdapter.getRemoteDevice(MI2_MAC));
+        startActivity(deviceDataActivity);
+    }
 
 }
